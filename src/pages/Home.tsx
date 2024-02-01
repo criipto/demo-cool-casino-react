@@ -16,7 +16,7 @@ function Home() {
       </div>
       <button
         onClick={() => handleLogin()}
-        className="uppercase text-sm font-medium h-8 w-[142px] bg-primary600 flex items-center justify-center"
+        className="uppercase text-sm font-medium h-8 w-[142px] bg-primary600 flex items-center justify-center hover:bg-primary800 active:bg-primary800 transition-background duration-300"
       >
         Log in
       </button>

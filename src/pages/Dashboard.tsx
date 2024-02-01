@@ -22,15 +22,15 @@ function Dashboard() {
         <p className="text-xl">You just earned 100 high performer playing credits!</p>
       </div>
       <div className="flex flex-col gap-3">
-        <button className="uppercase text-sm font-medium h-8 w-[260px] bg-primary600 flex items-center justify-center  hover:bg-primary800">
+        <button className="uppercase text-sm font-medium h-8 w-[260px] bg-primary600 flex items-center justify-center  hover:bg-primary800 transition-background duration-300">
           <img
             src="dice-outline.png"
             className="h-5 mr-2.5"
           />
           Use my 100 credits
         </button>
-        <button className="uppercase text-sm font-medium h-8 w-[260px] flex items-center justify-center border border-lightBlue25 hover:bg-lightBlue900">Check your earnings</button>
-        <button className="uppercase text-sm font-medium h-8 w-[260px] flex items-center justify-center border border-lightBlue25 hover:bg-lightBlue900">Invite friends</button>
+        <button className="uppercase text-sm font-medium h-8 w-[260px] flex items-center justify-center border border-lightBlue25 hover:bg-lightBlue900 transition-background duration-300">Check your earnings</button>
+        <button className="uppercase text-sm font-medium h-8 w-[260px] flex items-center justify-center border border-lightBlue25 hover:bg-lightBlue900 transition-background duration-300">Invite friends</button>
       </div>
     </section>
   );

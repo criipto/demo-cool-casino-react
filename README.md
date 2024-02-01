@@ -2,6 +2,6 @@
 
 Cool Casino is a simple React application showcasing logins via Criipto Verify.
 
-Try it out at https://demo-cool-casino-react.netlify.app/
+Try it out at https://cool-casino.criipto.com/
 
 ![Cool Casino Login](/public/demo-login.png)
