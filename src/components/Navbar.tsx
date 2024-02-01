@@ -1,8 +1,8 @@
 import ToggleEnvironmentModal from './ToggleEnvironmentModal';
 
 interface EnvProps {
-  onToggleEnv?: () => void;
-  currentEnvironment?: string;
+  onToggleEnv: () => void;
+  currentEnvironment: string;
 }
 
 export default function Navbar({ onToggleEnv, currentEnvironment }: EnvProps) {

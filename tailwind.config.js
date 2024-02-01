@@ -5,6 +5,7 @@ export default withMT({
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     colors: {
+      primary800: '#382AAD',
       primary600: '#604FED', // Primary bright purple
       primary25: '#F9F9FF', // Light purple
       lightBlue900: '#262E52',

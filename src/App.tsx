@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import PageLayout from 'components/PageLayout';
 import Home from 'pages/Home';
 import Dashboard from 'pages/Dashboard';
 import Login from 'pages/Login';
@@ -13,21 +14,25 @@ function App({ onToggleEnv, currentEnvironment }: AppProps) {
   return (
     <Routes>
       <Route
-        path="/"
         element={
-          <Home
+          <PageLayout
             onToggleEnv={onToggleEnv}
             currentEnvironment={currentEnvironment}
           />
         }
-      />
+      >
+        <Route
+          path="/"
+          element={<Home />}
+        />
+        <Route
+          path="/dashboard"
+          element={<Dashboard />}
+        />
+      </Route>
       <Route
         path="/login"
         element={<Login />}
-      />
-      <Route
-        path="/dashboard"
-        element={<Dashboard />}
       />
     </Routes>
   );
