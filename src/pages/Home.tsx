@@ -1,7 +1,7 @@
+import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import Navbar from '../components/Navbar';
 import '@criipto/verify-react/dist/criipto-verify-react.css';
-import { useCriiptoVerify } from '@criipto/verify-react';
 
 interface EnvProps {
   onToggleEnv: () => void;
@@ -9,7 +9,9 @@ interface EnvProps {
 }
 
 function Home({ onToggleEnv, currentEnvironment }: EnvProps) {
-  const { loginWithRedirect } = useCriiptoVerify();
+  const navigate = useNavigate();
+  const handleLogin = () => navigate('/login');
+
   return (
     <div className="bg-hero bg-cover bg-no-repeat bg-center h-screen relative">
       <Header />
@@ -27,9 +29,7 @@ function Home({ onToggleEnv, currentEnvironment }: EnvProps) {
           <p className="font-semibold text-4xl">100 free playing credits</p>
         </div>
         <button
-          onClick={() => {
-            loginWithRedirect({ acrValues: ['urn:grn:authn:dk:mitid:substantial', 'urn:grn:authn:se:bankid:same-device', 'urn:grn:authn:no:bankid:substantial'] });
-          }}
+          onClick={() => handleLogin()}
           className="uppercase text-sm font-medium h-8 w-[142px] bg-primary600 flex items-center justify-center"
         >
           Log in

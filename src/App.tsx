@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from 'pages/Home';
 import Dashboard from 'pages/Dashboard';
-
+import Login from 'pages/Login';
 import './App.css';
 
 interface AppProps {
@@ -20,6 +20,10 @@ function App({ onToggleEnv, currentEnvironment }: AppProps) {
             currentEnvironment={currentEnvironment}
           />
         }
+      />
+      <Route
+        path="/login"
+        element={<Login />}
       />
       <Route
         path="/dashboard"
