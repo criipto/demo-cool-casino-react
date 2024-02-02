@@ -25,7 +25,7 @@ function CriiptoVerifyProviderWrapper() {
     <CriiptoVerifyProvider
       domain={domain}
       clientID="urn:demos:cool-casino-react"
-      redirectUri={window.location.origin + '/dashboard'}
+      redirectUri={window.location.origin}
       sessionStore={window.sessionStorage}
       message="Log in to Cool Casino"
     >

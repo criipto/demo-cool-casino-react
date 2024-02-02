@@ -13,6 +13,7 @@ export default withMT({
       lightBlue300: '#BABCD7',
       lightBlue25: '#F7F7FF',
       white: '#FFFFFF',
+      error: '#FEE4E2',
     },
     extend: {
       backgroundImage: {
