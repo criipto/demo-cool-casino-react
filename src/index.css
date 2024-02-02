@@ -13,3 +13,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
+.criipto-eid-selector a.criipto-verify-button.criipto-eid-btn {
+  width: 342px;
+}

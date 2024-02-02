@@ -5,7 +5,7 @@ function Home() {
   const handleLogin = () => navigate('/login');
 
   return (
-    <section className="text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[364px] h-[392px] bg-lightBlue900 bg-opacity-40 px-[30px] py-11 flex flex-col items-center text-center justify-between">
+    <>
       <img
         src="/dice-white.png"
         className="w-[60px] mt-2"
@@ -20,7 +20,7 @@ function Home() {
       >
         Log in
       </button>
-    </section>
+    </>
   );
 }
 

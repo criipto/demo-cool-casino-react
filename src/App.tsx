@@ -3,9 +3,9 @@ import PageLayout from 'components/PageLayout';
 import Home from 'pages/Home';
 import Dashboard from 'pages/Dashboard';
 import Login from 'pages/Login';
+import NotFound from 'pages/NotFound';
 import { useCriiptoVerify } from '@criipto/verify-react';
 import '@criipto/verify-react/dist/criipto-verify-react.css';
-import './App.css';
 
 interface AppProps {
   onToggleEnv: () => void;
@@ -61,6 +61,10 @@ function App({ onToggleEnv, currentEnvironment }: AppProps) {
           />
         </>
       )}
+      <Route
+        path="*"
+        element={<NotFound />}
+      />
     </Routes>
   );
 }

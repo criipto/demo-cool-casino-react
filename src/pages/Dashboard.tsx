@@ -12,7 +12,7 @@ function Dashboard() {
   const firstName = (userName as string)?.split(' ')[0];
 
   return (
-    <section className="text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[364px] h-[458px] bg-lightBlue900 bg-opacity-40 px-[30px] py-12 flex flex-col items-center text-center justify-between">
+    <>
       <img
         src="check.png"
         className="h-12 pb-5"
@@ -32,7 +32,7 @@ function Dashboard() {
         <button className="uppercase text-sm font-medium h-8 w-[260px] flex items-center justify-center border border-lightBlue25 hover:bg-lightBlue900 transition-background duration-300">Check your earnings</button>
         <button className="uppercase text-sm font-medium h-8 w-[260px] flex items-center justify-center border border-lightBlue25 hover:bg-lightBlue900 transition-background duration-300">Invite friends</button>
       </div>
-    </section>
+    </>
   );
 }
 

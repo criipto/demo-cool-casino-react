@@ -28,7 +28,9 @@ function PageLayout({ onToggleEnv, currentEnvironment }: EnvProps) {
         onToggleEnv={onToggleEnv}
         currentEnvironment={currentEnvironment}
       />
-      <Outlet />
+      <section className="text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[364px] h-[392px] bg-lightBlue900 bg-opacity-40 rounded-lg px-[30px] py-11 flex flex-col items-center text-center justify-between mt-6">
+        <Outlet />
+      </section>
     </div>
   );
 }

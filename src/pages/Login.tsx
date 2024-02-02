@@ -1,5 +1,6 @@
-import '@criipto/verify-react/dist/criipto-verify-react.css';
 import { AuthMethodSelector } from '@criipto/verify-react';
+import '@criipto/verify-react/dist/criipto-verify-react.css';
+import 'index.css';
 
 function Home() {
   return (
