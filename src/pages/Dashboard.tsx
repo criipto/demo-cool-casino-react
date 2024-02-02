@@ -21,7 +21,7 @@ function Dashboard() {
         {userName ? <p className="text-4xl pb-2">Hi {firstName}!</p> : <p className="text-4xl pb-2">Hi!</p>}
         <p className="text-xl">You just earned 100 high performer playing credits!</p>
       </div>
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-3 mt-12">
         <button className="uppercase text-sm font-medium h-8 w-[260px] bg-primary600 flex items-center justify-center  hover:bg-primary800 transition-background duration-300">
           <img
             src="dice-outline.png"
